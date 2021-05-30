@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "logindefinitivo-5f23b": {
+      "hosting": {
+        "sigadAngular": [
+          "logindefinitivo-5f23b"
+        ]
+      }
+    }
+  }
+}

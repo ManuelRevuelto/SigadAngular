@@ -13,6 +13,7 @@ import { LogoutButtonComponent } from './components/logout-button/logout-button.
 import { AuthenticationButtonComponent } from './components/authentication-button/authentication-button.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterModule, Routes} from '@angular/router';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { RouterModule, Routes} from '@angular/router';
     LoginButtonComponent,
     LogoutButtonComponent,
     NavbarComponent,
-    AuthenticationButtonComponent
+    AuthenticationButtonComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
