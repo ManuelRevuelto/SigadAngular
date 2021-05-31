@@ -7,6 +7,7 @@ import { IncidenciasComponent } from './pages/incidencias/incidencias.component'
 import { MatriculasComponent } from './pages/matriculas/matriculas.component';
 
 const routes: Routes = [
+	
 	{ path: '', redirectTo: '/home', pathMatch: 'full'},
 	{ path: '', component: HomeComponent },
 	{ path: 'matriculas', component: MatriculasComponent},

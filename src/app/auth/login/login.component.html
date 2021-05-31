@@ -4,37 +4,19 @@
         <div class="card-body">
           <h1 class="text-center">LOGIN</h1>
           <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" formControlName="email" />
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                formControlName="password"
-              />
-            </div>
-            <button class="btn btn-primary btn-lg btn-block">
-              Login
-            </button>
-          </form>
-          <div class="form-group mt-3">
-            <button (click)="onGoogleLogin()" class="btn btn-lg btn-google">
-              Google
-            </button>
+          <br>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type= "email" class = "form-control" formControlName="email"/>
           </div>
-          <div class="form-group mt-3">
-            <p>
-              Create an account ? <a [routerLink]="['/register']"> Register </a>
-            </p>
+          <br>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type= "password" class = "form-control" formControlName="password"/>
           </div>
-          <div class="form-group mt-3">
-            <p>
-              <a [routerLink]="['/forgot-password']"> Forgot password ? </a>
-            </p>
-          </div>
+          <br>
+          <button type= "submit" class= "btn btn-primary btn-lg">Login</button>
+        </form>
         </div>
       </div>
     </div>
