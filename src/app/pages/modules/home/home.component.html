@@ -5,26 +5,28 @@
             <div class= "col-md-12">
                 <div class= "card card-body round-corners mb-0">
                     <div class= "row">
-                        <div class= "col-md-3"></div>
+                        <div class= "col-md-3">
+                            <img src="cebo" alt="avatarAlumno">
+                        </div>
                         <div class= "col-md-9">
                             <div class = "d-flex">
-                                <div class = "mr-auto"> <p class =".student_name">Nombre del alumno</p></div>
+                                <div class = "mr-auto"> <span class="student_name"> <h3>Manuel Revuelto de la Fuente</h3> </span></div>
                             </div>
                             <div class = "mt-3 studentInfoContainer">
                                 <div class= "row mb-2">
-                                    <div class= "col">DNI: </div>
-                                    <div class= "col">Lugar de nacimiento: </div>
+                                    <div class= "col">DNI: {{ dni }}</div>
+                                    <div class= "col">Lugar de nacimiento: {{lugar}}</div>
                                 </div>
                                 <div class= "row mb-2">
-                                    <div class= "col">Fecha de nacimiento: </div>
-                                    <div class= "col">Domicilio: </div>
+                                    <div class= "col">Fecha de nacimiento: {{fechnac}}</div>
+                                    <div class= "col">Domicilio: {{domicilio}}</div>
                                 </div>
                                 <div class= "row mb-2">
-                                    <div class= "col">Telefono: </div>
-                                    <div class= "col">Nacionalidad: </div>
+                                    <div class= "col">Telefono: {{telefono}}</div>
+                                    <div class= "col">Nacionalidad: {{nacionalidad}}</div>
                                 </div>
                                 <div class= "row mb-2">
-                                    <div class= "col">Email: </div>
+                                    <div class= "col">Email: {{email}}</div>
                                     <div class= "col"></div>
                                 </div>
                             </div>
