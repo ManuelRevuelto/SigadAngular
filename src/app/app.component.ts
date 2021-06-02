@@ -10,6 +10,5 @@ export class AppComponent implements OnInit{
   title = 'sigadAngular';
   constructor(public auth: AuthService) {}
   ngOnInit(): void {
-    // throw new Error('Method not implemented.');
   }
 }
