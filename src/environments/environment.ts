@@ -13,7 +13,6 @@ export const environment = {
     appId: "1:900585579269:web:62a2443d1d9facad490d6c",
     measurementId: "G-CWMTHB2R1X"
   },
-  apiURL: 'http://localhost:3000/nest',
   auth: {
     domain: "dev-yfy8b7i0.eu.auth0.com",
     clientId: "7EtfUdVnaExY8gUPXS3K8Yv1aJlIriRy",
