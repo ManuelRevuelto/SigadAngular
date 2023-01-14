@@ -11,6 +11,7 @@ class Student extends Model
 
     protected $fillable = [
         'id',
+        'id_user',
         'id_course',
         'name',
         'surname',
@@ -23,4 +24,9 @@ class Student extends Model
         'email',
         'picture',
     ];
+
+    function User()
+    {
+        return $this->belongsTo(User::class, 'id_user', 'id');
+    }
 }
