@@ -8,10 +8,10 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { environment as env, environment } from '../environments/environment';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
-import { LoginButtonComponent } from './modules/login-button/login-button.component';
-import { LogoutButtonComponent } from './modules/logout-button/logout-button.component';
-import { AuthenticationButtonComponent } from './modules/authentication-button/authentication-button.component';
-import { NavbarComponent } from './modules/navbar/navbar.component';
+import { LoginButtonComponent } from './modules/components/login-button/login-button.component';
+import { LogoutButtonComponent } from './modules/components/logout-button/logout-button.component';
+import { AuthenticationButtonComponent } from './modules/components/authentication-button/authentication-button.component';
+import { NavbarComponent } from './modules/components/navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms'
 
 import { AngularFireAuthModule } from '@angular/fire/auth';
