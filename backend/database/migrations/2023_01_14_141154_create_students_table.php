@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_user');
             $table->unsignedBigInteger('id_course');
             $table->string('name');
             $table->string('surname');
@@ -28,6 +29,7 @@ return new class extends Migration
             $table->binary('picture');
             $table->timestamps();
 
+            $table->foreign('id_user')->references('id')->on('users');
             $table->foreign('id_course')->references('id')->on('courses');
         });
     }
