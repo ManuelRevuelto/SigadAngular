@@ -1,10 +1,11 @@
-import { domain, clientId } from '../../auth_config.json';
-
+// Modificar antes de hacer el ng build
 export const environment = {
   production: false,
-  auth: {
-    domain: "dev-yfy8b7i0.eu.auth0.com",
-    clientId: "7EtfUdVnaExY8gUPXS3K8Yv1aJlIriRy",
-    redirectUri: window.location.origin,
+  host: 'http://localhost:8000',
+	endpoint: '/api',
+  login: {
+    grant_type: "password",
+    client_id: "2",
+    client_secret: "PIR2fYejyXqwXl0M3vf8Ynj907ZiFgSkslUAkbhm"
   }
 };
