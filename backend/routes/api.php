@@ -22,11 +22,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth')->group(function () {
-
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::resource('asignaturas', SubjectController::class);
+    Route::resource('faltas', AttendanceController::class);
+    Route::resource('incidencias', IncidentController::class);
+    Route::resource('notas', MarkController::class);
 });
 
-Route::resource('asignaturas', SubjectController::class);
-Route::resource('faltas', AttendanceController::class);
-Route::resource('incidencias', IncidentController::class);
-Route::resource('notas', MarkController::class);
