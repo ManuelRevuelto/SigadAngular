@@ -25,6 +25,11 @@ class Student extends Model
         'picture',
     ];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
+
     function User()
     {
         return $this->belongsTo(User::class, 'id_user', 'id');

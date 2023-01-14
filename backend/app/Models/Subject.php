@@ -16,4 +16,9 @@ class Subject extends Model
         'status',
         'duration',
     ];
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
 }
