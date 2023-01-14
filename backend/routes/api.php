@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ApiAuthController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\IncidentController;
 use App\Http\Controllers\MarkController;
@@ -23,6 +24,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::group(['middleware' => 'auth:api'], function () {
+
+    Route::get('whoiam', [ApiAuthController::class, 'whoiam']);
+    Route::post('logout', [ApiAuthController::class, 'logout']);
+
     Route::resource('asignaturas', SubjectController::class);
     Route::resource('faltas', AttendanceController::class);
     Route::resource('incidencias', IncidentController::class);
